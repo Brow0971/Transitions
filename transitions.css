@@ -50,11 +50,13 @@ main {
 .avatar img {
   border: 0.25rem solid rgb(218, 45, 45);
   border-radius: 50%;
-  shape-image-threshold: ;
-  
+  transition-property: border-radius; 
+  transition-duration: 50ms;   
+  transition-timing-function: ease-in;  
+  transition-delay: 15ms;
 }
 .avatar img:hover{
-
+  border-radius: 40%; /* border radius must be under 50 or change wont appear */
 }
 
 .contact {
