@@ -16,7 +16,6 @@ header {
 
 header h1 {
   font-size: 2.4rem;
-  background-color: red;
 }
 
 main {
@@ -29,16 +28,16 @@ main {
 }
 
 .card {
-  border: 1px solid hsl(220deg, 50%, 60%);
+  border: 1px solid rgb(4, 6, 8);
   position: relative;
   overflow: hidden;
-  background-color: hsl(220deg, 30%, 80%);
+  background-color: rgb(14, 97, 17); 
 }
 
 .name {
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  background-color: hsl(220deg, 50%, 60%);
+  background-color: rgb(13, 39, 92);
   color: hsl(220deg, 0%, 95%);
   text-align: center;
 }
@@ -49,14 +48,19 @@ main {
 }
 
 .avatar img {
-  border: 0.25rem solid hsl(80deg, 50%, 70%);
+  border: 0.25rem solid rgb(218, 45, 45);
   border-radius: 50%;
+  shape-image-threshold: ;
+  
+}
+.avatar img:hover{
+
 }
 
 .contact {
   font-size: 0.6rem;
   padding: 0.5rem 1rem;
-  color: hsl(220deg, 30%, 50%);
+  color: hsl(220deg, 0%, 0%);
 }
 
 .email {}
