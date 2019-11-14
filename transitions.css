@@ -41,6 +41,9 @@ main {
   color: hsl(220deg, 0%, 95%);
   text-align: center;
 }
+.name:hover{
+color: red;
+}
 
 .avatar {
   text-align: center;
@@ -62,21 +65,29 @@ main {
 .contact {
   font-size: 0.6rem;
   padding: 0.5rem 1rem;
-  color: hsl(220deg, 0%, 0%);
+  color: hsl(220deg, 100%, 100%);
 }
 
 .email {}
+.email:hover{
+color:red;
+}
 
 .cell {}
+.cell:hover{
+color:red;
+}
 
 .avatars {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: hsl(80deg, 20%, 90%);
+  background-color: rgb(13, 39, 92);
   padding: 0.5rem;
+
 }
+
 
 .icon-wrapper {
   display: inline-block;
@@ -85,4 +96,12 @@ main {
   width: 30px;
   height: 30px;
   line-height: 30px;
+  transition-property: transform; /* when using scale you must use transform */
+  transition-duration: 75ms;   
+  transition-timing-function: ease-out;  
+  transition-delay: 15ms;
+}
+
+.icon-wrapper:hover {
+transform: scale(2);
 }
